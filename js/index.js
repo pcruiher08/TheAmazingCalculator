@@ -11,7 +11,8 @@ var equal = document.querySelector(".equalButton")
 
 var lastNextLine = 0
 var lastOperation = ""
-const isNumber = /^\d+(\.\d+)?$/
+
+var isNumber = /^\d+(\.\d+)?$/
 
 sum.addEventListener("click",(event)=>{
     if(isNumber.test(inp.value)){
