@@ -11,12 +11,10 @@ var equal = document.querySelector(".equalButton")
 
 var lastNextLine = 0
 var lastOperation = ""
-
 var isNumber = /^\d+(\.\d+)?$/
 
 sum.addEventListener("click",(event)=>{
     if(isNumber.test(inp.value)){
-        console.log(inp.value + ': is a number')
         log.value += inp.value
         log.value += " + "
         inp.value = ""
@@ -48,10 +46,11 @@ div.addEventListener("click",(event)=>{
 })
 
 equal.addEventListener("click",(event)=>{
-    log.value += inp.value
-    inp.value = ""
     lastOperation = (log.value).substring(lastNextLine,(log.value).length)
-    if(lastOperation.length>1){
+    if(lastOperation.length > 1){
+        log.value += inp.value
+        inp.value = ""
+        lastOperation = (log.value).substring(lastNextLine,(log.value).length)
         res.value = eval(lastOperation)
         log.value += " = "
         log.value += res.value
