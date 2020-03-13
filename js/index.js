@@ -50,7 +50,7 @@ equal.addEventListener("click",(event)=>{
     if(lastOperation.length > 1){
         log.value += inp.value
         inp.value = ""
-        lastOperation = (log.value).substring(lastNextLine,(log.value).length)
+        lastOperation =(log.value).substring(lastNextLine,(log.value).length)
         res.value = eval(lastOperation)
         log.value += " = "
         log.value += res.value
