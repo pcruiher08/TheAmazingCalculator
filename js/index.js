@@ -1,13 +1,13 @@
-var sum = document.querySelector("#addButton");
-var sub = document.querySelector("#substractButton");
-var mult = document.querySelector("#multiplicationButton");
-var div = document.querySelector("#divisionButton");
-var res = document.querySelector("#resultValue");
-var log = document.querySelector("#logInformation");
+var sum = document.querySelector("#addButton")
+var sub = document.querySelector("#substractButton")
+var mult = document.querySelector("#multiplicationButton")
+var div = document.querySelector("#divisionButton")
+var res = document.querySelector("#resultValue")
+var log = document.querySelector("#logInformation")
 
-var inp = document.querySelector(".inputNumber");
-var reset = document.querySelector(".resetButton");
-var equal = document.querySelector(".equalButton");
+var inp = document.querySelector(".inputNumber")
+var reset = document.querySelector(".resetButton")
+var equal = document.querySelector(".equalButton")
 
 var lastNextLine = 0
 var lastOperation = ""
